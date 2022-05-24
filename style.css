@@ -1,0 +1,112 @@
+:root{
+    --primary:#f8d247;
+    --primary-dark:#e0b739;
+    --secondary:#fbeb79;
+    --secondary-dark:#fad334;
+    --gradient-dark:#ff3a75;
+    --gradient-light:#fe924c;
+    --black:#1f1c13;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+    display: grid;
+    place-items: center;
+    background-image: linear-gradient(to top left,  var(--primary), var(--primary-dark));
+}
+header{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5%;
+}
+.logo{
+    width: 12%;
+    height: 3rem;
+    color: var(--black);
+    position: relative;
+    font-size: 40px;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: 700;
+}
+.logo-h, .logo-e{
+    transform: rotate(10deg);
+    position: absolute;
+}
+.logo-e{
+    transform: rotate(-30deg);
+    right: 20%;
+}
+
+
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+}
+.item-menu{
+    list-style: none;
+}
+.item-menu a{
+    color: var(--black);
+    font-weight: 600;
+    text-decoration: none;
+}
+.container{
+    border-radius: 4%;
+    
+
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 70vw;
+    height: 500px;
+    background: var(--secondary);
+    margin-top: 5vh;
+}
+.circle{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom left,  var(--gradient-light), var(--gradient-dark));
+    
+}
+.circle img{
+    position: absolute;
+    top: -80%;
+    right: -20%;
+}
+.main-skills{
+    left: 0;
+    bottom: 0;
+    height: 70%;
+    width: 20%;
+    position: absolute;
+    z-index: 1;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+}
+.main-skills img{
+    width: 50px;
+
+}
+.html-img{
+    padding-right: 5%;
+    align-self: flex-end;
+}
+.css-img{
+    padding-right: 5%;
+    align-self: center;
+}
+.js-img{
+    padding-right: 5%;
+    align-self: flex-end;
+}
